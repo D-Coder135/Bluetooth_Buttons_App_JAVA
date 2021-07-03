@@ -17,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         onButton = (Button)findViewById(R.id.button);
         offButton = (Button)findViewById(R.id.button2);
+        bluetoothAdapter = bluetoothAdapter.getDefaultAdapter();
     }
 }
