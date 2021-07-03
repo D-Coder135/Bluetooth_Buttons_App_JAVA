@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         offButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                bluetoothAdapter.disable();
             }
         });
     }
