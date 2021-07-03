@@ -26,5 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 bluetoothAdapter.enable();
             }
         });
+
+        offButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
