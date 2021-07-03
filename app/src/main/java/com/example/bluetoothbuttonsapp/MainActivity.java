@@ -18,20 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         onButton = (Button)findViewById(R.id.button);
         offButton = (Button)findViewById(R.id.button2);
-        bluetoothAdapter = bluetoothAdapter.getDefaultAdapter();
+        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        onButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bluetoothAdapter.enable();
-            }
-        });
+        onButton.setOnClickListener(v -> bluetoothAdapter.enable());
 
-        offButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bluetoothAdapter.disable();
-            }
-        });
+        offButton.setOnClickListener(v -> bluetoothAdapter.disable());
     }
 }
